@@ -1,26 +1,34 @@
 
+var i = 0;
 
-const rockButton = document.querySelector('.rock');
-const paperButton = document.querySelector('.paper');
-const scissorButton = document.querySelector('.scissors');
-
-
-var playerChoice =rockButton.addEventListener('click', () => {
-    let rock = 'rock'; 
-    game(rock);
-    return rock; 
-},false)
-
-var playerChoice =paperButton.addEventListener('click', () => {
-    let choice = 'paper'; 
-    game(choice); 
-},false)
-
-var playerChoice =scissorButton.addEventListener('click', () => {
-    let choice = 'scissors'; 
-    game(choice); 
-},false)
-
+  
+      const rockButton = document.querySelector('.rock');
+      const paperButton = document.querySelector('.paper');
+      const scissorButton = document.querySelector('.scissors');
+      
+  
+      var playerChoice =rockButton.addEventListener('click', () => {
+      let rock = 'rock'; 
+      game(rock); 
+      },false)
+  
+  var playerChoice =paperButton.addEventListener('click', () => {
+      let choice = 'paper'; 
+      game(choice); 
+      },false)
+  
+  var playerChoice =scissorButton.addEventListener('click', () => {
+      let choice = 'scissors'; 
+      game(choice); 
+  },false)
+  
+  
+  
+  var displayDiv = document.createElement("div");
+  
+  displayDiv.textContent = 'beans';
+  
+  document.body.appendChild(displayDiv);
 
 
 //var playerChoice = 'rock';
@@ -81,7 +89,8 @@ var playerChoice =scissorButton.addEventListener('click', () => {
     console.log(winString);
     console.log("Player choice : " + playerChoice);
     console.log("Computer choice : " + computer);
-
-
     
+    
+    
+
 }      
